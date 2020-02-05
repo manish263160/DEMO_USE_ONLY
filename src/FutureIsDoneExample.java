@@ -15,6 +15,14 @@ public class FutureIsDoneExample {
         while(!future.isDone()) {
             System.out.println("Task is still not done...");
             Thread.sleep(200);
+            Future<String> future = executorService.submit(() -> {
+                Thread.sleep(2000);
+                return "Hello from Callable";
+            });
+            Future<String> future = executorService.submit(() -> {
+                Thread.sleep(2000);
+                return "Hello from Callable";
+            });
         }
 
         System.out.println("Task completed! Retrieving the result");

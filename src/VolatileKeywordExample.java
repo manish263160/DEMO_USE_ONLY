@@ -8,10 +8,6 @@ public class VolatileKeywordExample {
 
            }
 
-           System.out.println("Hello World!");
-
-           while(sayHello) {
-
            }
 
            System.out.println("Good Bye!");
@@ -23,8 +19,5 @@ public class VolatileKeywordExample {
         System.out.println("Say Hello..");
         sayHello = true;
 
-        Thread.sleep(1000);
-        System.out.println("Say Bye..");
-        sayHello = false;
     }
 }

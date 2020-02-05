@@ -9,15 +9,10 @@ public class InvokeAnyExample {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         ExecutorService executorService = Executors.newFixedThreadPool(5);
 
-        Callable<String> task1 = () -> {
-            Thread.sleep(2000);
-            return "Result of Task1";
+     asdurn "Result of Task1";
         };
-
-        Callable<String> task2 = () -> {
-            Thread.sleep(1000);
-            return "Result of Task2";
-        };
+asdasdasd
+      
 
         Callable<String> task3 = () -> {
             Thread.sleep(5000);

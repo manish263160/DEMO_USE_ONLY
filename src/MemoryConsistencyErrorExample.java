@@ -8,23 +8,16 @@ public class MemoryConsistencyErrorExample {
 
            }
 
-           System.out.println("Hello World!");
-
-           while(sayHello) {
-
-           }
-
            System.out.println("Good Bye!");
         });
 
         thread.start();
 
         Thread.sleep(1000);
-        System.out.println("Say Hello..");
+        System.out.println("SasASasy Hello..");
         sayHello = true;
 
-        Thread.sleep(1000);
-        System.out.println("Say Bye..");
+   );
         sayHello = false;
     }
 }

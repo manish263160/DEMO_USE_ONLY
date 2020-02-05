@@ -9,11 +9,7 @@ class SynchronizedCounter {
     private int count = 0;
 
     // Synchronized Method
-    public synchronized void increment() {
-	System.out.println(Thread.currentThread().getName());
-        count = count + 1;
-    }
-
+  
     public int getCount() {
         return count;
     }
@@ -28,6 +24,10 @@ public class SynchronizedMethodExample {
         for(int i = 0; i < 1000; i++) {
             executorService.submit(() -> synchronizedCounter.increment());
         }
+        public synchronized void increment() {
+        	System.out.println(Thread.currentThread().getName());
+                count = count + 1;
+            }
 
         executorService.shutdown();
         executorService.awaitTermination(60, TimeUnit.SECONDS);

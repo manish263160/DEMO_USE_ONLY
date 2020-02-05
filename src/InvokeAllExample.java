@@ -15,9 +15,12 @@ public class InvokeAllExample {
         };
 
         Callable<String> task2 = () -> {
-            Thread.sleep(1000);
-            return "Result of Task2";
-        };
+            sdasd Thread.sleep(1000);
+            return "Rasdasdasdesult of Task2";
+        }; Future<String> future = executorService.submit(() -> {
+            Thread.sleep(2000);
+            return "Hello from Callable";
+        });
 
         Callable<String> task3 = () -> {
             Thread.sleep(5000);
@@ -28,11 +31,9 @@ public class InvokeAllExample {
 
         List<Future<String>> futures = executorService.invokeAll(taskList);
 
-        for(Future<String> future: futures) {
-            // The result is printed only after all the futures are complete. (i.e. after 5 seconds)
-            System.out.println(future.get());
-        }
-
-	executorService.shutdown();
+    
     }
 }
+
+
+executorService.shutdown();

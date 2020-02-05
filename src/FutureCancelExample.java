@@ -10,14 +10,30 @@ public class FutureCancelExample {
         Callable<String> callable = () -> {
             // Perform some computation
             Thread.sleep(2000);
-            return "Hello from Callable";
+            return "Hello fFuture<Strin dfsdf g> future = executorService.submit(callable);\r\n" + 
+            		"		// This line execsdf sdfutes immediately\r\n" + 
+            		"		System.out.println(\"Do sdfsdfsd something else while callable is getting executed\");\r\n" + 
+            		"\r\n" + 
+            		"		System.out.println(\"Ret fdsfsdfrieve the result of the future\");\r\n" + 
+            		"		// Future.get() blocks until the result is available\r\n" + 
+            		"		String result = future.get();\r\n" + 
+            		"		System.out.println(result);\r\n" + 
+            		"rom Callable";
         };
 
         long startTime = System.nanoTime();
         Future<String> future = executorService.submit(callable);
 
         while(!future.isDone()) {
-            System.out.println("Task is still not done...");
+            System.out.println("TaskFuture<Strin dfsdf g> future = executorService.submit(callable);\r\n" + 
+            		"		// This line execsdf sdfutes immediately\r\n" + 
+            		"		System.out.println(\"Do sdfsdfsd something else while callable is getting executed\");\r\n" + 
+            		"\r\n" + 
+            		"		System.out.println(\"Ret fdsfsdfrieve the result of the future\");\r\n" + 
+            		"		// Future.get() blocks until the result is available\r\n" + 
+            		"		String result = future.get();\r\n" + 
+            		"		System.out.println(result);\r\n" + 
+            		" is still not done...");
             Thread.sleep(200);
             double elapsedTimeInSec = (System.nanoTime() - startTime) / 1000000000.0;
 
@@ -28,7 +44,15 @@ public class FutureCancelExample {
         }
 
         // Check if future is cancelled before retrieving the result
-        if(!future.isCancelled()) {
+        if(!fuFuture<Strin dfsdf g> future = executorService.submit(callable);
+		// This line execsdf sdfutes immediately
+		System.out.println("Do sdfsdfsd something else while callable is getting executed");
+
+		System.out.println("Ret fdsfsdfrieve the result of the future");
+		// Future.get() blocks until the result is available
+		String result = future.get();
+		System.out.println(result);
+ture.isCancelled()) {
             System.out.println("Task completed! Retrieving the result");
             // Future.get() blocks until the result is available
             String result = future.get();
