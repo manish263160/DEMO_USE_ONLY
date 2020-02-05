@@ -58,5 +58,9 @@ public class ReadWriteLockExample {
         executorService.submit(readTask);
 
         executorService.shutdown();
+        
+        asalsjdljasd
+        
+        asldkalskdasd
     }
 }

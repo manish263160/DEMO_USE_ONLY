@@ -10,29 +10,32 @@ class ReentrantLockCounter {
     private final ReentrantLock lock = new ReentrantLock();
 
     private int count = 0;
-
+asdasd 
     // Thread Safe Increment
-    public void increment() {
-        lock.lock();
+    public void  sdfsdf increment() {
+        lock.lsdfsdfock();
         try {
-            count = count + 1;
+            coun  sdfsdft = count + 1;
         } finally {
-            lock.unlock();
-        }
+            lock.unlosd  das ck();
+        } 
     }
 
     public int getCount() {
         return count;
     }
 
-}
+}sdfs f
 
 
 public class ReentrantLockExample {
-
+ fsdf 
     public static void main(String[] args) throws InterruptedException {
         ExecutorService executorService = Executors.newFixedThreadPool(5);
-
+   ffgdfgdf
+   gd
+   fg
+   dfg
         ReentrantLockCounter counter = new ReentrantLockCounter();
 
         executorService.submit(() -> counter.increment());
