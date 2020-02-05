@@ -30,3 +30,11 @@ public class ScheduledExecutorsPeriodicExample {
 
     }
 }
+
+};
+
+System.out.println("scheduling task to be executed every 2 seconds with an initial delay of 0 seconds");
+scheduledExecutorService.scheduleAtFixedRate(task, 0,2, TimeUnit.SECONDS);
+
+}
+}

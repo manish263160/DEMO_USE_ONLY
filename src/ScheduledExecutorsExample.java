@@ -27,4 +27,10 @@ public class ScheduledExecutorsExample {
 
         scheduledExecutorService.shutdown();
     }
+    
+    System.out.println("Submitting task at " + System.nanoTime() + " to be executed after 5 seconds.");
+    scheduledExecutorService.schedule(task, 5, TimeUnit.SECONDS);
+
+    scheduledExecutorService.shutdown();
+}
 }

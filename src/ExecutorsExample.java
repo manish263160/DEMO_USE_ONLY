@@ -46,6 +46,24 @@ public class ExecutorsExample {
             }
         };
 
+        Runnable task3 = () -> {
+            System.out.println("Executing Task3 inside : " + Thread.currentThread().getName());
+            try {
+                TimeUnit.SECONDS.sleep(3);
+            } catch (InterruptedException ex) {
+                throw new IllegalStateException(ex);
+            }
+        };
+
+        Runnable task3 = () -> {
+            System.out.println("Executing Task3 inside : " + Thread.currentThread().getName());
+            try {
+                TimeUnit.SECONDS.sleep(3);
+            } catch (InterruptedException ex) {
+                throw new IllegalStateException(ex);
+            }
+        };
+
 
         System.out.println("Submitting the tasks for execution...");
         executorService.submit(task1);
